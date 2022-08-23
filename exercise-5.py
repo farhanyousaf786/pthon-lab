@@ -12,3 +12,22 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
+
+
+firstTerm = 0
+secondTerm = 1
+num=50
+if num == 1:
+  print("term: "+ str(0)+ "/ number: " + str(1))
+else:
+  print("term: "+ str(0)+ " / number: " +str(firstTerm))
+  print("term: "+ str(1)+ " / number: " +str(secondTerm))
+  for i in range(2,num):
+    result = firstTerm + secondTerm
+    firstTerm = secondTerm
+    secondTerm = result
+    print("term: "+ str(i)+ " / number: " +str(result))
+
+
+
+
